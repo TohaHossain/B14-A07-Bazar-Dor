@@ -6,8 +6,8 @@
 
 ## Live links
 
-- Live site: _Add deployed URL here_
-- Source code: _Add GitHub repository URL here_
+- Live site: https://b14-a07-bazar-dor-steel.vercel.app/
+- Source code: https://github.com/TohaHossain/B14-A07-Bazar-Dor
 
 ## Highlights
 
@@ -58,7 +58,7 @@ Alternative API base URLs are also available in the assignment brief if the prim
 ### Installation
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/TohaHossain/B14-A07-Bazar-Dor
 cd B14-A7-Bazar-Dor
 npm install
 ```
