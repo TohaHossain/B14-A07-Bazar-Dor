@@ -1,0 +1,20 @@
+.authPage { min-height: 70vh; padding: 3rem 1rem; background: #fffaf5; }
+.authCard, .profileCard { width: min(100%, 30rem); margin: 0 auto; padding: 2rem; background: #fff; border: 1px solid #fde5d0; border-radius: 1.5rem; box-shadow: 0 12px 30px rgba(68, 43, 17, .07); }
+.profilePage { min-height: 55vh; width: min(100% - 2rem, 72rem); margin: 0 auto; padding: 3rem 0; }
+.profileCard { margin: 1.75rem 0 0; }
+.kicker { margin: 0 0 .35rem; color: #ea6b13; font-size: .9rem; font-weight: 800; }
+.title { margin: 0; color: #172033; font-size: clamp(1.75rem, 5vw, 2.1rem); line-height: 1.15; }
+.copy { margin: .65rem 0 0; color: #667085; font-size: .92rem; line-height: 1.7; }
+.form { display: grid; gap: 1rem; margin-top: 1.75rem; }
+.label { display: grid; gap: .45rem; color: #334155; font-size: .9rem; font-weight: 700; }
+.input { width: 100%; box-sizing: border-box; padding: .8rem .9rem; border: 1px solid #dbe1ea; border-radius: .75rem; color: #172033; font: inherit; outline: none; }
+.input:focus { border-color: #f58220; box-shadow: 0 0 0 3px #fff0e4; }
+.primaryButton, .secondaryButton, .googleButton { display: inline-flex; align-items: center; justify-content: center; box-sizing: border-box; border-radius: .75rem; padding: .8rem 1rem; border: 1px solid transparent; font: inherit; font-size: .92rem; font-weight: 800; cursor: pointer; text-decoration: none; transition: .18s ease; }
+.primaryButton { width: 100%; background: #f47716; color: #fff; }.primaryButton:hover { background: #da5f05; }.primaryButton:disabled { opacity: .6; cursor: wait; }
+.secondaryButton, .googleButton { background: #fff; border-color: #dbe1ea; color: #334155; }.secondaryButton:hover, .googleButton:hover { background: #f8fafc; }
+.error { margin: 0; padding: .65rem .8rem; border-radius: .6rem; background: #fff1f2; color: #be123c; font-size: .86rem; font-weight: 600; }
+.divider { display: flex; align-items: center; gap: .75rem; margin: 1.4rem 0; color: #94a3b8; font-size: .75rem; }.divider::before, .divider::after { content: ""; height: 1px; flex: 1; background: #e2e8f0; }
+.googleButton { width: 100%; }.footerText, .demo { margin: 1.4rem 0 0; color: #64748b; text-align: center; font-size: .9rem; }.footerText a { color: #e9680a; font-weight: 800; }.demo { font-size: .75rem; color: #94a3b8; }
+.profileHead { display: flex; align-items: center; gap: 1rem; }.avatar { display: grid; width: 3.5rem; height: 3.5rem; place-items: center; border-radius: 999px; background: #ffedd5; color: #ea6b13; font-size: 1.25rem; font-weight: 900; }.profileName { margin: 0; color: #172033; font-size: 1.25rem; }.email { margin: .25rem 0 0; color: #64748b; font-size: .9rem; }.actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.75rem; }.actions .primaryButton { width: auto; }.loading { height: 12rem; border-radius: 1.5rem; background: #f1f5f9; animation: pulse 1.3s infinite ease-in-out; }@keyframes pulse { 50% { opacity: .45; } }
+.toast { position: fixed; z-index: 100; right: 1.25rem; bottom: 1.25rem; max-width: min(24rem, calc(100vw - 2.5rem)); border-radius: .75rem; padding: .85rem 1rem; color: #fff; font-size: .9rem; font-weight: 700; box-shadow: 0 12px 30px rgba(15, 23, 42, .22); }.toastSuccess { background: #15803d; }.toastError { background: #be123c; }.toastClose { float: right; margin-left: 1rem; padding: 0; border: 0; background: transparent; color: inherit; font: inherit; font-size: 1.2rem; cursor: pointer; }
+@media (min-width: 640px) { .authPage { padding: 5rem 1rem; } .authCard, .profileCard { padding: 2.25rem; } .profilePage { padding-top: 4rem; } }
